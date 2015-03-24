@@ -33,7 +33,7 @@ class fepData:
         
     def splitfepout(self): # if memory is not enough, trade space for efficiency
         '''
-        Split .fepout file into small files, each containing data for one window.
+        Split the .fepout file into small files, each containing data for one window.
         Only the data of work in a window is recorded. The vdW and Elec terms are discarded.
         filename: name of the .fepout file
         '''
