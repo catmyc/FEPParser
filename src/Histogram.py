@@ -31,7 +31,7 @@ class Histogram:
         self.max = self.data[-1]
         print('Input summary: Max value is %.4f, Min value is %.4f, number of data points is %d.' % (self.max, self.min, self.size))
     
-    def stat(self, Nintervals = 100):
+    def stat(self, Nintervals = 200):
         '''
         Calculate histogram.
         By default, 100 statistical intervals will be applied.

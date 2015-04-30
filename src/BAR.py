@@ -22,8 +22,8 @@ def _logmean(exp_args):
     
 class BARestimator:
     '''
-    The BARestimator class for doing BAR analysis.
-    Using W_F and W_R recording the forward and backward work.
+    The BARestimator class for BAR analysis.
+    Using W_F and W_R to record the forward and backward work.
     This is for estimating the free-energy change of one window!
     ''' 
     def __init__(self, Fwd, Rvs, Temperature):
@@ -60,7 +60,7 @@ class BARestimator:
         The DeltaF value from FEP output should be taken as the initial guess. If not specified, 0 will be taken as input. 
         '''
         k = 0.001987200 # Boltzmann constant
-        kT = k * self.Temp #In the unit of kcal/mol
+        kT = k * self.Temp #In unit kcal/mol
         exp_args_F = []
         exp_args_R = []
         for wf in self.W_F:
